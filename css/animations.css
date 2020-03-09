@@ -1,0 +1,19 @@
+/* Animação do fundo */
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to  { background-position: 100% 100%; }
+}
+@-moz-keyframes slide {
+    from { background-position: 0 0; }
+    to  { background-position: 100% 100%; }
+}
+@keyframes slide {
+    from { background-position: 0 0; }
+    to  { background-position: 100% 100%; }
+}
+
+@keyframes jumping {
+    from { transform: translateY(0); }
+    70%  { transform: translateY(-30px); }
+    to { transform: translateY(0); }
+}
