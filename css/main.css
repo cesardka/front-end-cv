@@ -1,5 +1,9 @@
 body {
+    display: flex;
+    align-self: center;
+    justify-content: center;
     padding: 20px;
+    font-family: 'Google Sans',Roboto,arial,sans-serif;
     background: repeating-linear-gradient(
         -45deg, 
         #ffe271 0 15px,
@@ -17,9 +21,10 @@ ul li {
 }
 
 .container {
+    width: 800px;
     padding: 20px 30px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(255, 255, 255, 0.85);
     -webkit-box-shadow: 0px 5px 15px -4px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 5px 15px -4px rgba(0,0,0,0.3);
     box-shadow: 0px 5px 15px -4px rgba(0,0,0,0.3);
@@ -32,6 +37,42 @@ ul li {
 
 .container section:not(:last-child) {
     border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.container section h3 {
+    min-width: 130px;
+    max-width: 130px;
+    word-wrap: break-word;
+}
+
+.container section h4 {
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.container section img.logo {
+    width: 120px;
+    max-height: 120px;
+}
+
+.container section .periodo {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.container section .legenda {
+    font-size: 14px;
+    color: #444;
+    font-style: italic;
+}
+
+.container section .legenda > *:not(:last-child) {
+    margin-right: 30px;
+}
+
+.container section .detalhes {
+    margin: 10px 0;
+    text-align: justify;
 }
 
 #quem-sou-eu {
@@ -55,14 +96,24 @@ ul li {
     /* animation: jumping 0.7s infinite steps(40, start); */
 }
 
-#quem-sou-eu #informacoes #endereco {
-}
-
-#quem-sou-eu #informacoes #contato {
-}
-
 #quem-sou-eu #foto-perfil {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
+}
+
+#objetivo #resumo {
+    padding: 20px 40px;
+    text-align: justify;
+}
+
+#conhecimentos ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#conhecimentos ul li {
+    width: 250px;
 }
