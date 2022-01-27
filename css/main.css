@@ -1,148 +1,174 @@
 body {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    padding: 20px;
-    font-family: 'Google Sans',Roboto,arial,sans-serif;
-    background: repeating-linear-gradient(
-        -45deg, 
-        #ffe271 0 15px,
-        #ffd700 0 30px
-    );
-    background-size: 40px 40px;
-    -webkit-animation: slide 30s infinite linear forwards;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  background: repeating-linear-gradient(-45deg, #ffe271 0 15px, #ffd700 0 30px);
+  background-size: 40px 39px;
+  /* -webkit-animation: slide 30s infinite linear forwards;
     -moz-animation: slide 30s infinite linear forwards;
-    animation: slide 30s infinite linear forwards;
+    animation: slide 30s infinite linear forwards; */
 }
 
 ul li {
-    list-style: none;
-    margin-bottom: 15px;
+  list-style: none;
+  margin-bottom: 15px;
 }
 
 .container {
-    width: 800px;
-    height: 1142px;
-    padding: 20px 30px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.95);
-    -webkit-box-shadow: 0px 5px 15px -4px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 5px 15px -4px rgba(0,0,0,0.3);
-    box-shadow: 0px 5px 15px -4px rgba(0,0,0,0.3);
+  /* display: none; */
+  /* width: 800px; */
+  /* height: 1142px; */
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.3);
 }
 
 .container section {
-    display: flex;
-    align-content: center;
+  display: flex;
+  align-content: center;
 }
 
 .container section:not(:last-child) {
-    border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .container section h3 {
-    min-width: 130px;
-    max-width: 130px;
-    word-wrap: break-word;
+  min-width: 130px;
+  max-width: 130px;
+  word-wrap: break-word;
 }
 
 .container section h4 {
-    display: inline-block;
-    margin: 4px 0;
+  display: inline-block;
+  margin: 4px 0;
 }
 
-.container section a, .container section a:hover, .container section a:active {
-    text-decoration: none;
-    color: blue;
+.container section:not(:last-child) > ul {
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+
+.container section a,
+.container section a:hover,
+.container section a:active {
+  text-decoration: none;
+  color: blue;
 }
 
 .container section img.logo {
-    width: 120px;
-    max-height: 120px;
+  width: 120px;
+  max-height: 120px;
 }
 
 .container section .periodo {
-    font-size: 14px;
-    margin-left: 10px;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .container section .legenda {
-    font-size: 14px;
-    color: #444;
-    display: flex;
-    justify-content: space-between;
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container section .legenda > *:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .container section .location {
-    font-style: italic;
-    align-self: flex-end;
+  font-size: 14px;
+  color: #444;
+  font-style: italic;
+  position: relative;
+  float: right;
+  top: 5px;
 }
 
 .container section .detalhes {
-    margin: 10px 0;
-    text-align: justify;
+  margin: 10px 0;
+  text-align: justify;
 }
 
 .icon {
-    width: 16px;
-    height: 16px;
-    padding: 1px 5px;
-    line-height: 10px;
+  width: 16px;
+  height: 16px;
+  padding: 1px 5px;
+  line-height: 10px;
 }
 
 #quem-sou-eu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-family: "Lato", sans-serif;
 }
 
 #quem-sou-eu #informacoes {
-    margin-left: 40px;
+  margin-left: 20px;
 }
 
 #quem-sou-eu #informacoes > * {
-    margin: 5px 0;
-    display: flex;
-    align-content: center;
+  margin: 5px 0;
+  display: flex;
+  align-content: center;
 }
 
 #quem-sou-eu #informacoes #nome {
-    font-size: 48px;
-    /* animation: jumping 0.7s infinite steps(100, start); */
+  font-size: 48px;
+  /* animation: jumping 0.7s infinite steps(100, start); */
 }
 
 #quem-sou-eu #foto-perfil {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
 }
 
 #objetivo #resumo {
-    padding: 20px 40px;
-    text-align: justify;
+  padding: 20px;
+  text-align: justify;
+}
+
+#profissional .detalhes ul li {
+  list-style: disc;
+  margin-bottom: 7px;
+}
+
+#profissional > ul > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 680px;
+  height: 1px;
+  left: auto;
+  display: block;
+  clear: both;
+  background-color: #d0c2c28c;
 }
 
 #conhecimentos ul {
-    height: 135px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 90px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 12px;
 }
 
 #conhecimentos ul li {
-    display: flex;
-    justify-content: center;
-    width: 150px;
-    padding: 5px;
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: #ffe271;
-    border: 1px solid #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: #ffe271;
+  border: 1px solid #ffd700;
 }
